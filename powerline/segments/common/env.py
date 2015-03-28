@@ -169,5 +169,5 @@ def user(pl, hide_user=None):
 	euid = _geteuid()
 	return [{
 		'contents': username,
-		'highlight_groups': ['user'] if euid != 0 else ['superuser', 'user'],
+		'highlight_groups': ['user'] if euid != 0 else ['suser', 'superuser', 'user'],
 	}]
